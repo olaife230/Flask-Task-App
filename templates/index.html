@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>📝 Task List</h1>
+
+    <a href="{{ url_for('create') }}" class="btn">+ Add Task</a>
+
+    {% if tasks %}
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for task in tasks %}
+            <tr>
+              <td>{{ task.title }}</td>
+              <td>{{ task.description }}</td>
+              <td>
+                <a href="{{ url_for('update', id=task.id) }}" class="action-btn edit">Edit</a>
+                <a href="{{ url_for('delete', id=task.id) }}" class="action-btn delete">Delete</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No tasks available. Add one!</p>
+    {% endif %}
+  </div>
+</body>
+</html>
