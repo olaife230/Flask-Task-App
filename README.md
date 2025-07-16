@@ -22,6 +22,18 @@ This is a simple CRUD (Create, Read, Update, Delete) web application built using
 - Delete tasks  
 - Responsive and simple user interface  
 
+## 👥 Contributors
+
+
+| Name                                       | Contributions                                                                                                |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [Ife](https://github.com/olaife230)     | Built the interface using html and css and handled form submission to the flask endpoints|
+| [Abigail]()     | created the read me file, including the setup guide and set up the environment variables|
+| [Haruna]() |  connected flask to mysql, tested all crud functionalities|
+| [Hauwa](https://github.com/jeremiahauwa)        | set up mysql database and provided  database connection configuration                            |
+| [David](https://github.com/David-dev24)  | Set-up the flask application software, implemented crud api endpoints                      |
+
+
 ---
 
 ## ▶️ How to Run It
